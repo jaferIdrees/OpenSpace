@@ -1,0 +1,152 @@
+body{
+  /*border: 2px solid blue;*/
+  background-color: black;
+  width: 95vw;
+  height: 95vh;
+  alignment: center;
+  display: flex;
+  flex-direction: column;
+  /*align-content: space-around;*/
+  align-items: center;
+}
+
+.space{
+  /*border: 2px solid aqua;*/
+  width: 70vw;
+  height: 94vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  background-image: url("space.png");
+}
+
+.planet-area{
+  /*border: 1px solid aquamarine;*/
+  width: 30vw;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.planet {
+  /*border: 1px solid yellow;*/
+  position: relative;
+  display: flex;
+  top: -220px;
+  left: 0px;
+  width: 30vw;
+  height: 70vh;
+  z-index: 2;
+}
+
+.rocket{
+  position: relative;
+  display: flex;
+  /*top: -75vh;*/
+  left: 16vw;
+  width: 15vw;
+  height: 35vh;
+  transform: rotateZ(30deg);
+  z-index: 3;
+}
+
+.control-panel__inner, .control-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-radius: 3px;
+  background-color: black;
+  width: 35vw;
+  height: 40vh;
+  /*left: 4vw;*/
+  /*top: -50vh;*/
+  /*bottom: 60vh;*/
+}
+
+.control-panel{
+  z-index: 1;
+  width: 37vw;
+  height: 43vh;
+  background-color: gold;
+}
+
+.control-panel__inner{
+  z-index: 2;
+  top: 1.5vh;
+}
+
+img{
+  float: left;
+}
+
+.control-panel__inner div{
+  display: flex;
+  align-items: center;
+  /*border: 2px solid yellow;*/
+  width: 33vw;
+  left: 8vw;
+  top: -30vh;
+  z-index: 4;
+}
+
+.check-buttons{
+  height: 5vh;
+  justify-content: space-around;
+}
+
+.levers{
+  display: flex;
+  height: 15vh;
+  justify-content: space-evenly;
+}
+
+.text-input, .launch-btn{
+  height: 4vh;
+}
+
+.launch-btn{
+  border-radius: 50%;
+  height: 7vh;
+  background-color: orangered;
+  color: white;
+  border-color: white;
+}
+.levers input{
+  direction: rtl;
+  transform: rotateZ(90deg);
+  width: 5vw;
+  height: 13vh;
+}
+
+.text-input, .launch-btn{
+  display: flex;
+  justify-content: center;
+}
+
+.password-input{
+  /*position: relative;*/
+  position: relative;
+  top: 2vh;
+  border: 2px solid yellow;
+  color: blueviolet;
+}
+
+#ok-btn{
+  width: 3vw;
+  position: relative;
+  top: -2.8vh;
+  left: 9vw;
+  border-radius: 35%;
+  background-color: gold;
+}
+.control-panel{
+  position: absolute;
+  bottom: 20vh;
+  left: 45vw;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(215,219,13,0.03995101458552175) 78%, rgba(0,212,255,1) 100%);
+}
+.check-buttons, .levers input, .launch-btn{
+  disbled : true;
+}
